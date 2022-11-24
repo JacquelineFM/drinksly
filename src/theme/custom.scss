@@ -1,0 +1,32 @@
+// ----------------------------------------------------------------------
+
+$primary: #012840;
+$secondary: #beb490;
+$success: #4caf50;
+$info: #2196f3;
+$warning: #ff9800;
+$danger: #b71c1c;
+$light: #fafafa;
+$dark: #303030;
+
+// theme colors
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+);
+
+// body
+$body-bg: $light;
+
+// font
+$font-family-base: "Public Sans", sans-serif;
+
+// ----------------------------------------------------------------------
+
+@import "bootstrap/scss/bootstrap.scss";
