@@ -1,14 +1,16 @@
 // react-bootstrap
 import { Container } from "react-bootstrap";
+// components
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 // ----------------------------------------------------------------------
 
 const App = () => {
   return (
     <>
-      <header className="text-center my-5">
-        <h1>Drinksly</h1>
-      </header>
+      <Header />
+      <Hero />
       <Container className="my-5"></Container>
     </>
   );
