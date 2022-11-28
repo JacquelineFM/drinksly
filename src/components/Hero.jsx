@@ -10,9 +10,9 @@ const Hero = () => {
         <Col xs={12} lg={7}>
           <Stack gap={4}>
             <h1 className="display-2 fw-bolder lh-base">
-              The Best Recipes For Your Favorite{" "}
+              The best recipes for your favorite{" "}
               <span className="d-inline-block text-secondary py-2 px-3 border border-8 border-secondary">
-                Drinks
+                drinks
               </span>
             </h1>
             <p className="text-muted fs-4 lh-base">
