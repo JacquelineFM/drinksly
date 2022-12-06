@@ -5,7 +5,7 @@ import { Container, Row, Col, Stack, Button } from "react-bootstrap";
 
 const Hero = () => {
   return (
-    <Container id="home" className="my-5">
+    <Container id="home" className="my-7">
       <Row className="align-items-center">
         <Col xs={12} lg={7}>
           <Stack gap={4}>
@@ -32,7 +32,7 @@ const Hero = () => {
           </Stack>
         </Col>
         <Col xs={12} lg={5}>
-          <img src="hero.png" className="w-100 h-100" />
+          <img src="hero.png" className="img-fluid" />
         </Col>
       </Row>
     </Container>
