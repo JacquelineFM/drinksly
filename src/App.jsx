@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 // ----------------------------------------------------------------------
 
@@ -14,6 +15,7 @@ const App = () => {
       <Hero />
       <Features />
       <Container className="my-5"></Container>
+      <Footer />
     </>
   );
 };
