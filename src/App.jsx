@@ -1,8 +1,12 @@
 // react-bootstrap
 import { Container } from "react-bootstrap";
-// components
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+// layout
+import Header from "./layout/main/Header";
+import Footer from "./layout/main/Footer";
+import Hero from "./layout/drinks/Hero";
+import Features from "./layout/drinks/Features";
+// sections
+import SearchDrinks from "./sections/drinks/SearchDrinks";
 
 // ----------------------------------------------------------------------
 
@@ -11,7 +15,11 @@ const App = () => {
     <>
       <Header />
       <Hero />
-      <Container className="my-5"></Container>
+      <Features />
+      <Container id="recipes" className="my-8">
+        <SearchDrinks />
+      </Container>
+      <Footer />
     </>
   );
 };
