@@ -1,5 +1,5 @@
 // react-bootstrap
-import { Navbar, Container, Nav, Stack, Button } from "react-bootstrap";
+import { Navbar, Container, Image, Nav, Stack, Button } from "react-bootstrap";
 import { Linkedin, EnvelopeFill, Github } from "react-bootstrap-icons";
 
 // ----------------------------------------------------------------------
@@ -10,7 +10,7 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="#home">
-            <img alt="Drinksly" src="/logo.svg" width="150" height="80" />
+            <Image alt="Drinksly" src="logo.svg" width="150" height="80" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav me-auto" />
           <Navbar.Collapse

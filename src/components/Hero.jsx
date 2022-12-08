@@ -1,5 +1,5 @@
 // react-bootstrap
-import { Container, Row, Col, Stack, Button } from "react-bootstrap";
+import { Container, Row, Col, Stack, Button, Image } from "react-bootstrap";
 
 // ----------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ const Hero = () => {
           </Stack>
         </Col>
         <Col xs={12} lg={5}>
-          <img src="hero.png" className="img-fluid" />
+          <Image alt="hero" src="hero.png" fluid />
         </Col>
       </Row>
     </Container>
