@@ -1,11 +1,12 @@
 // react-bootstrap
 import { Container } from "react-bootstrap";
-// components
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import SearchDrinks from "./components/SearchDrinks";
-import Footer from "./components/Footer";
+// layout
+import Header from "./layout/main/Header";
+import Footer from "./layout/main/Footer";
+import Hero from "./layout/drinks/Hero";
+import Features from "./layout/drinks/Features";
+// sections
+import SearchDrinks from "./sections/drinks/SearchDrinks";
 
 // ----------------------------------------------------------------------
 
