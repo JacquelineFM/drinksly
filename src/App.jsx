@@ -1,5 +1,7 @@
 // react-bootstrap
 import { Container } from "react-bootstrap";
+// context
+import { CategoriesProvider } from "./context/CategoriesProvider";
 // layout
 import Header from "./layout/main/Header";
 import Footer from "./layout/main/Footer";
@@ -12,7 +14,7 @@ import SearchDrinks from "./sections/drinks/SearchDrinks";
 
 const App = () => {
   return (
-    <>
+    <CategoriesProvider>
       <Header />
       <Hero />
       <Features />
@@ -20,7 +22,7 @@ const App = () => {
         <SearchDrinks />
       </Container>
       <Footer />
-    </>
+    </CategoriesProvider>
   );
 };
 
