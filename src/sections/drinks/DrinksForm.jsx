@@ -1,9 +1,13 @@
 // react-bootstrap
 import { Button, Col, Form, Row } from "react-bootstrap";
+// hooks
+import useCategories from "../../hooks/useCategories";
 
 // ----------------------------------------------------------------------
 
 const DrinksForm = () => {
+  const { categories } = useCategories();
+
   return (
     <Form className="my-5 w-75 mx-auto border border-3 rounded-4 border-primary py-2 px-4">
       <Row className="align-items-end">
@@ -21,6 +25,11 @@ const DrinksForm = () => {
             <Form.Label className="text-muted">Category</Form.Label>
             <Form.Select defaultValue="...">
               <option>...</option>
+              {categories.map(({ strCategory }) => (
+                <option key={strCategory} value={strCategory}>
+                  {strCategory}
+                </option>
+              ))}
             </Form.Select>
           </Form.Group>
         </Col>
