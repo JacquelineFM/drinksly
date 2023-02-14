@@ -2,6 +2,7 @@
 import { Container } from "react-bootstrap";
 // context
 import { CategoriesProvider } from "./context/CategoriesProvider";
+import { DrinksProvider } from "./context/DrinksProvider";
 // layout
 import Header from "./layout/main/Header";
 import Footer from "./layout/main/Footer";
@@ -15,13 +16,15 @@ import SearchDrinks from "./sections/drinks/SearchDrinks";
 const App = () => {
   return (
     <CategoriesProvider>
-      <Header />
-      <Hero />
-      <Features />
-      <Container id="recipes" className="my-8">
-        <SearchDrinks />
-      </Container>
-      <Footer />
+      <DrinksProvider>
+        <Header />
+        <Hero />
+        <Features />
+        <Container id="recipes" className="my-8">
+          <SearchDrinks />
+        </Container>
+        <Footer />
+      </DrinksProvider>
     </CategoriesProvider>
   );
 };
