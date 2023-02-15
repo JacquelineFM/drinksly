@@ -17,7 +17,7 @@ const CategoriesProvider = ({ children }) => {
 
       setCategories(data.drinks);
     } catch (error) {
-      console.log(error);
+      throw new Error("Error getting the categories");
     }
   };
 
