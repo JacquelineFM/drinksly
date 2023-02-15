@@ -10,6 +10,7 @@ import Hero from "./layout/drinks/Hero";
 import Features from "./layout/drinks/Features";
 // sections
 import SearchDrinks from "./sections/drinks/SearchDrinks";
+import ListDrinks from "./sections/drinks/ListDrinks";
 
 // ----------------------------------------------------------------------
 
@@ -22,6 +23,7 @@ const App = () => {
         <Features />
         <Container id="recipes" className="my-8">
           <SearchDrinks />
+          <ListDrinks />
         </Container>
         <Footer />
       </DrinksProvider>
