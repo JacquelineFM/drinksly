@@ -20,7 +20,7 @@ const Drink = ({ drink }) => {
             {strDrink}
           </Card.Subtitle>
           <Button variant="primary" className="w-100 mt-3">
-            See recipe
+            Get recipe
           </Button>
         </Card.Body>
       </Card>
