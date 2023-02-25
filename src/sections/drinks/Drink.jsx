@@ -33,7 +33,7 @@ const Drink = ({ drink }) => {
             className="w-100 mt-3"
             onClick={handleClick}
           >
-            See recipe
+            Get recipe
           </Button>
         </Card.Body>
       </Card>

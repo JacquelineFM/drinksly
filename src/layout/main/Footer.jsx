@@ -10,7 +10,7 @@ const Footer = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} lg={7}>
             <p className="text-center text-md-start my-auto">
-              © 2021 Created by{" "}
+              © 2023 Created by{" "}
               <a
                 className="text-white fw-bold text-decoration-none"
                 href="https://github.com/JacquelineFM"
