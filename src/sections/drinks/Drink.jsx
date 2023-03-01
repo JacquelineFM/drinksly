@@ -1,10 +1,19 @@
+import PropTypes from "prop-types";
 // react-bootstrap
 import { Col, Card, Button } from "react-bootstrap";
+// hooks
+import useDrinks from "../../hooks/useDrinks";
 
 // ----------------------------------------------------------------------
 
 const Drink = ({ drink }) => {
-  const { strDrink, strDrinkThumb } = drink;
+  const { idDrink, strDrink, strDrinkThumb } = drink;
+  const { handleModalClick, handleDrinkIdClick } = useDrinks();
+
+  const handleClick = () => {
+    handleModalClick();
+    handleDrinkIdClick(idDrink);
+  };
 
   return (
     <Col md={6} lg={3}>
@@ -19,7 +28,11 @@ const Drink = ({ drink }) => {
           <Card.Subtitle className="text-truncate mt-1">
             {strDrink}
           </Card.Subtitle>
-          <Button variant="primary" className="w-100 mt-3">
+          <Button
+            variant="primary"
+            className="w-100 mt-3"
+            onClick={handleClick}
+          >
             Get recipe
           </Button>
         </Card.Body>
@@ -29,3 +42,13 @@ const Drink = ({ drink }) => {
 };
 
 export default Drink;
+
+// ----------------------------------------------------------------------
+
+Drink.propTypes = {
+  drink: PropTypes.shape({
+    idDrink: PropTypes.string.isRequired,
+    strDrink: PropTypes.string.isRequired,
+    strDrinkThumb: PropTypes.string.isRequired,
+  }).isRequired,
+};

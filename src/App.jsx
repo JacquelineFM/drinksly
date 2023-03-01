@@ -11,6 +11,7 @@ import Features from "./layout/drinks/Features";
 // sections
 import SearchDrinks from "./sections/drinks/SearchDrinks";
 import ListDrinks from "./sections/drinks/ListDrinks";
+import ModalDrink from "./sections/drinks/ModalDrink";
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +25,7 @@ const App = () => {
         <Container id="recipes" className="my-8">
           <SearchDrinks />
           <ListDrinks />
+          <ModalDrink />
         </Container>
         <Footer />
       </DrinksProvider>
